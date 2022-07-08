@@ -50,3 +50,25 @@
 //create another css module and add css styling to the form
     //dont forget to link the new css file in the index.html header
 
+//SUBMIT A SERVICE REQUEST 
+//SAVE THE PERM STATE... (when the user clicks the submit button on the form field, my job is to take the transient state and convert it to a perm state by storing it to the database.json file by using a fetch() call)
+//paste boilerplate code into dataAccess. js. This function tells the API to create something new. 
+//LISTEN FOR THE CLICK
+    //add the boilerplate code to serviceForm.js
+//watch the video 
+
+//use dev tools to inspect that my fetch is working to GET the data from my json server
+
+//DISPLAY A NEW STATE (implement the stateChanged custom action again)
+//update sendRequest function to dispatch the custom event after the POST operation has been completed
+//GENERATE NEW HTML ReP
+//  create an event listener in main mod to invoke the rendor() function - this will build html again
+//check dev tools and add text into input form to check if the data is showing
+
+//DENY SERVICE REQUEST
+//Add boilerplate function - function is responsible  for initiating the fetch request for delete (must take pk as argument.)
+//add a button in the delete requests for the user to submit delete requests
+//add css styling
+// add a click event for that delete button 
+        //when button is clicked, invoke deleteRequest
+        // pass the id of the service request to the deleteRequest funciton as an argument

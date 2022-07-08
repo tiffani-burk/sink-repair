@@ -15,3 +15,15 @@
     flex-direction: column;
     margin: .2rem;
 }
+
+.request__delete {
+    background-color: #a347db;
+    color: white;
+}
+
+.request-items {
+    background-color: #eae9e9;
+    margin: .5rem;
+    padding: .5rem;
+    display: flex; justify-content: space-between;
+}

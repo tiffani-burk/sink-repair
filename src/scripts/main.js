@@ -14,3 +14,10 @@ const render = () => {
 
 render()
 
+//invoke rendor function to build html again
+mainContainer.addEventListener(
+    "stateChanged",
+    customEvent => {
+        render()
+    }
+)
