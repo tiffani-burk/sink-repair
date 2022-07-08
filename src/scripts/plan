@@ -1,0 +1,52 @@
+//client wants:
+//-a form with the job description, address, budget max and desired completion date inputs
+//- to be able to track which employee completed which job
+//-the UI to reflect that the job is completed when it was done by maude and/or merle
+//-the ability to delete a request
+
+//note of fetch 
+//fetch in 3 steps:
+        //tell js to fetch the data
+        //THEN (.then) tell it to parse the data as json
+        //Then (.then) tell it in the 2nd function what you want it to do
+
+
+//steps:
+//create ERD with data entities for the employee, the service request and the completed order
+//use fetch() to get all the existing requests and list them on the UI
+    //go to daatbase.json and add more data objects
+    // go to terminal and run json-server database.json -p 8088 -w
+    //create a property named requested in our application state object, found in dataAccess.js
+        //set that value to empty array
+
+    //HTTP GET REQUEST WITH FETCH
+        //paste boilerplate code into dataAccess.js
+
+
+//EXPORT REQUESTS STATES
+//-Define and export a function named getRequests that returns a copy of requests states
+
+//FETCH STATE BEFORE DISPLAYING
+//-Fetch data from the API and store it  in the application state...
+//update code found in main.js by adding the fetchRequest function and a .then method
+
+
+//ADD THE STARTER CODE 
+//In the requests.js
+//define the function that will be passed to the map method
+    //this function converts each service object to an HTML rep
+    //return a <li> of HTML rep
+    //function should have 1 param
+    //the description of the serivce request should be interploated inside the <li> html rep
+//update the Requests function to take the the above function as argument to map
+
+//fix bug in index.html that is throwing the null error
+//---
+//Requesting Services
+//COLLECTING USER INPUT with a form
+//In serviceForm.js, add boilerplate code 
+// then import the html rep into the main html module (sinkRepair) and interpolate it to add the sections of the site
+
+//create another css module and add css styling to the form
+    //dont forget to link the new css file in the index.html header
+

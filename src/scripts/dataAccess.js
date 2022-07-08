@@ -16,6 +16,7 @@ export const fetchRequests = () => {
         )
 }
 
+//create a functio nto return a copy of the data being fetched in fetchRequests
 export const getRequests = () => {
     return database.fetchRequests.map(fetchRequest => ({...fetchRequest}))
 }
