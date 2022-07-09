@@ -1,27 +1,131 @@
 {
-  "plumbers": [],
-  "completions": [],
-  "requests": [
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Maude"
+    },
     {
       "id": 2,
+      "name": "Merle"
+    }
+  ],
+  "completions": [
+    {
+      "id": 1,
+      "requestId": 3,
+      "employeeId": 2,
+      "timestamp": 343566334
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "requestId": 4,
+      "plumberId": 1,
+      "id": 7
+    },
+    {
+      "requestId": 5,
+      "plumberId": 1,
+      "id": 8
+    },
+    {
+      "requestId": 3,
+      "plumberId": 1,
+      "id": 9
+    },
+    {
+      "requestId": 4,
+      "plumberId": 1,
+      "id": 10
+    },
+    {
+      "requestId": 3,
+      "plumberId": 1,
+      "id": 11
+    },
+    {
+      "requestId": 5,
+      "plumberId": 1,
+      "id": 12
+    },
+    {
+      "requestId": 6,
+      "plumberId": 1,
+      "id": 13
+    },
+    {
+      "requestId": 7,
+      "plumberId": 1,
+      "id": 14
+    },
+    {
+      "requestId": 3,
+      "plumberId": 1,
+      "id": 15
+    },
+    {
+      "requestId": 8,
+      "plumberId": 2,
+      "id": 16
+    },
+    {
+      "requestId": 4,
+      "plumberId": 1,
+      "id": 17
+    }
+  ],
+  "requests": [
+    {
+      "id": 1,
       "description": "Sink is clogged up.",
       "address": "12345 Sink Repair Ln",
       "budget": 900,
       "neededBy": "2021-09-15"
     },
     {
-      "description": "sing repair",
+      "description": "sink repair",
       "address": "1023 disco lane",
       "budget": "1000",
       "neededBy": "2022-07-15",
-      "id": 4
+      "id": 2
     },
     {
       "description": "sink repair",
       "address": "2845 candy cane lane",
       "budget": "1000",
       "neededBy": "2022-07-19",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
       "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
     }
   ]
 }

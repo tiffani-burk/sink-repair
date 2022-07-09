@@ -72,3 +72,13 @@
 // add a click event for that delete button 
         //when button is clicked, invoke deleteRequest
         // pass the id of the service request to the deleteRequest funciton as an argument
+
+//CREATING COMPLETION STATE
+// add boilerplate function - this funciton with fetch the data on the plumbers from the API
+// update mainjs to request both resources (requests and plumbers
+//add html rep for the options of plumbers in the list of service requests
+//add an event listener to the request module that will listen for a change. this shows which plumber completed the job.
+//create 2 functions in dataAccess module 
+    //saveCompletion - performs the POST request to save the completion obj to the API
+    //fetchCompletion - will retreive all completion objs from the API 
+//update main mod to fetch completions after requests

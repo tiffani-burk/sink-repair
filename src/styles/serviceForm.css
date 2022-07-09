@@ -26,4 +26,12 @@
     margin: .5rem;
     padding: .5rem;
     display: flex; justify-content: space-between;
+    
+}
+
+.request-description {
+    background-color: #6b7a88;
+    width: 90%;
+    height: 3rem;
+    color: white;
 }

@@ -1,15 +1,19 @@
 import { SinkRepair } from "./SinkRepair.js"
-import { fetchRequests } from "./dataAccess.js"
+import { fetchRequests, fetchPlumbers, fetchCompletions } from "./dataAccess.js"
+
 
 
 const mainContainer = document.querySelector("#container")
 
-const render = () => {
-    fetchRequests().then(
-        () => {
-            mainContainer.innerHTML = SinkRepair()
-        }
-    )
+    const render = () => {
+        fetchRequests()
+            .then(() => fetchPlumbers())
+            .then(() => fetchCompletions())
+            .then(
+                () => {
+                    mainContainer.innerHTML = SinkRepair()
+                }
+            )
 }
 
 render()
@@ -21,3 +25,4 @@ mainContainer.addEventListener(
         render()
     }
 )
+
