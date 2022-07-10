@@ -2,15 +2,16 @@ import { getRequests, saveCompletion, fetchCompletions } from "./dataAccess.js"
 import { deleteRequest } from "./dataAccess.js"
 import { getPlumbers } from "./dataAccess.js"
 
+const mainContainer = document.querySelector("#container")
 
-
+//This function is showing an html representation of all the requests being made by the customer, with the option to delete them and the option to choose which plumber comlpleted the job
 export const Requests = () => {
     const requests = getRequests()
     let plumbers = getPlumbers()
     //this function is taking the making html rep out of the requests
     let convertRequestToListItems = (requestObj) => {
     
-        return `<li class="request-items"> 
+        return `<li class="request-items"> <div class="request-option">
         ${requestObj.description} 
         <select class="plumbers" id="plumbers">
         <option value="0">Choose</option>
@@ -21,7 +22,7 @@ export const Requests = () => {
                 }
             ).join("")
         }
-        </select>
+        </select></div>
         <button class="request__delete"
         id="request--${requestObj.id}">
         Delete
@@ -39,7 +40,8 @@ export const Requests = () => {
     return html
 }
 
-const mainContainer = document.querySelector("#container")
+
+
 //click event for the delete request button 
 mainContainer.addEventListener("click", click => {
     if (click.target.id.startsWith("request--")) {

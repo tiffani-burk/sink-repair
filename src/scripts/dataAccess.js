@@ -1,3 +1,7 @@
+//add a mainContainer variable for the fetch broadcast the stateChange to 
+const mainContainer = document.querySelector("#container")
+
+//stores external data when fetched in here, start with empty array
 const applicationState = {
     requests: [],
     plumbers: [],
@@ -23,8 +27,6 @@ export const getRequests = () => {
     return applicationState.requests.map(request => ({ ...request }))
 }
 
-//add a mainContainer variable for the fetch broadcast the stateChange to 
-const mainContainer = document.querySelector("#container")
 
 //boilerplate code
 //this code is asking the API to create something new
