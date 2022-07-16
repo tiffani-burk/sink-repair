@@ -1,5 +1,5 @@
 # sink-repair
-Given boilerplate code. Objective was to learn how to create a form and use an APT to pull external data into my code, using fetch and, also, how to create custom events after a POST operation is complete on the form. 
+Objective was to learn how to create a form and use an API to pull external data into my code, using fetch and, also, how to create custom events after a POST operation is complete on the form. 
 I created an ERD, linked below, based on data needed for this project.
 [Sink Repair ERD.pdf](https://github.com/tiffani-burk/sink-repair/files/9079953/Sink.Repair.ERD.pdf)
 
